@@ -69,7 +69,7 @@ left join employees on roles_employee.employee_id = employees.id
 join roles on roles_employee.role_id  = roles.id
 where role_name like '%Manual QA engineer%';
 
--- 11) Вывести имена и должность автоматизаторов QA:
+-- 11) Вывести имена и должность автоматизаторов QA
 select employees.id, employee_name, role_name 
 from roles_employee
 left join employees on roles_employee.employee_id = employees.id
